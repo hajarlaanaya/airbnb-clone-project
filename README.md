@@ -59,3 +59,75 @@ Used to containerize the application, making it easier to deploy and run in any 
 
 ### 🌍 Git & GitHub
 Git is used for version control, while GitHub hosts the repository and facilitates collaboration.
+
+## 🗃️ Database Design
+
+The database for the AirBnB Clone project is structured around several key entities:
+
+### 👤 Users
+Represents the users of the platform.
+- `id` (primary key)
+- `name`
+- `email`
+- `password_hash`
+- `role` (e.g., guest, host)
+
+➡️ **Relationships**:
+- A user can own multiple properties.
+- A user can make multiple bookings.
+- A user can write multiple reviews.
+
+---
+
+### 🏡 Properties
+Represents listings available for booking.
+- `id` (primary key)
+- `title`
+- `description`
+- `location`
+- `price_per_night`
+- `owner_id` (foreign key to Users)
+
+➡️ **Relationships**:
+- A property belongs to a user (host).
+- A property can have multiple bookings and reviews.
+
+---
+
+### 📅 Bookings
+Represents reservations made by users.
+- `id` (primary key)
+- `user_id` (foreign key)
+- `property_id` (foreign key)
+- `start_date`
+- `end_date`
+- `total_price`
+
+➡️ **Relationships**:
+- A booking belongs to a user and a property.
+
+---
+
+### ✍️ Reviews
+Represents feedback left by users for properties.
+- `id` (primary key)
+- `user_id` (foreign key)
+- `property_id` (foreign key)
+- `rating` (e.g., 1–5)
+- `comment`
+
+➡️ **Relationships**:
+- A review belongs to a user and a property.
+
+---
+
+### 💳 Payments
+Represents payments for bookings.
+- `id` (primary key)
+- `booking_id` (foreign key)
+- `amount`
+- `payment_date`
+- `status` (e.g., pending, completed)
+
+➡️ **Relationships**:
+- A payment is linked to a specific booking.
