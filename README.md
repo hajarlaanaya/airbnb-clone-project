@@ -209,3 +209,8 @@ CI/CD (Continuous Integration and Continuous Deployment) pipelines automate the 
 - Speeds up the development process with automatic builds and deployments.
 - Reduces human error and increases reliability of deployments.
 - Enables faster feedback and more agile development workflows.
+
+### 🛠️ Tools Used:
+- **GitHub Actions**: Automates workflows directly from the GitHub repository (e.g., run tests, lint code, deploy on push).
+- **Docker**: Ensures consistency across development, testing, and production environments by containerizing the application.
+- **Heroku / AWS / Netlify** *(optional)*: For hosting and deployment depending on the tech stack.
