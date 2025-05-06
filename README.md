@@ -156,3 +156,55 @@ Guests can search for properties based on location, price range, and other crite
 
 ### 📈 Admin Dashboard *(optional)*
 An interface for admins to manage users, properties, and transactions. It provides insights and allows moderation when needed.
+
+## 🔐 API Security
+
+Securing the backend APIs is a critical component of the Airbnb Clone project. The following measures are implemented to ensure the safety of user data and the integrity of the platform:
+
+### ✅ Authentication
+Only registered users can access certain endpoints. Token-based authentication (e.g., JWT) ensures that each request is from a verified user.
+
+**Why it matters**: Prevents unauthorized access to personal and sensitive data.
+
+---
+
+### ✅ Authorization
+Role-based access control ensures that users only perform actions permitted to their role (e.g., hosts can create listings, guests can book).
+
+**Why it matters**: Prevents users from accessing or modifying data they shouldn't.
+
+---
+
+### ✅ Rate Limiting
+Limits the number of requests a user or IP can make within a time frame to prevent abuse and denial-of-service attacks.
+
+**Why it matters**: Protects the server from overload and malicious activity.
+
+---
+
+### ✅ Input Validation & Sanitization
+All inputs from users are validated and sanitized to prevent SQL injection and other attacks.
+
+**Why it matters**: Ensures database integrity and prevents security breaches.
+
+---
+
+### ✅ HTTPS/SSL
+All communications between clients and the server are encrypted using HTTPS.
+
+**Why it matters**: Protects data in transit, especially sensitive information like login credentials and payment details.
+
+## 🔄 CI/CD Pipeline
+
+CI/CD (Continuous Integration and Continuous Deployment) pipelines automate the process of building, testing, and deploying code. They help ensure that changes pushed to the repository are automatically validated and deployed with minimal human intervention.
+
+### 📌 Why CI/CD is Important:
+- Ensures code quality by running automated tests before deployment.
+- Speeds up the development process with automatic builds and deployments.
+- Reduces human error and increases reliability of deployments.
+- Enables faster feedback and more agile development workflows.
+
+### 🛠️ Tools Used:
+- **GitHub Actions**: Automates workflows directly from the GitHub repository (e.g., run tests, lint code, deploy on push).
+- **Docker**: Ensures consistency across development, testing, and production environments by containerizing the application.
+- **Heroku / AWS / Netlify** *(optional)*: For hosting and deployment depending on the tech stack.
