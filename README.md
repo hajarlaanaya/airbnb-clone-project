@@ -194,6 +194,12 @@ All communications between clients and the server are encrypted using HTTPS.
 
 **Why it matters**: Protects data in transit, especially sensitive information like login credentials and payment details.
 
+
+### 🛠️ Tools Used:
+- **GitHub Actions**: Automates workflows directly from the GitHub repository (e.g., run tests, lint code, deploy on push).
+- **Docker**: Ensures consistency across development, testing, and production environments by containerizing the application.
+- **Heroku / AWS / Netlify** *(optional)*: For hosting and deployment depending on the tech stack.
+
 ## 🔄 CI/CD Pipeline
 
 CI/CD (Continuous Integration and Continuous Deployment) pipelines automate the process of building, testing, and deploying code. They help ensure that changes pushed to the repository are automatically validated and deployed with minimal human intervention.
@@ -203,8 +209,3 @@ CI/CD (Continuous Integration and Continuous Deployment) pipelines automate the 
 - Speeds up the development process with automatic builds and deployments.
 - Reduces human error and increases reliability of deployments.
 - Enables faster feedback and more agile development workflows.
-
-### 🛠️ Tools Used:
-- **GitHub Actions**: Automates workflows directly from the GitHub repository (e.g., run tests, lint code, deploy on push).
-- **Docker**: Ensures consistency across development, testing, and production environments by containerizing the application.
-- **Heroku / AWS / Netlify** *(optional)*: For hosting and deployment depending on the tech stack.
