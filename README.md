@@ -37,3 +37,25 @@ Coordinates the project timeline, resources, and team members. Ensures communica
 
 ### 📦 DevOps Engineer
 Responsible for deployment, continuous integration/delivery, and managing infrastructure. Ensures that the application can be efficiently deployed and scaled.
+
+## 🛠 Technology Stack
+
+This project uses the following technologies:
+
+### 🌐 Django
+A high-level Python web framework that allows rapid development of secure and maintainable websites. It handles URL routing, user authentication, and provides tools for building RESTful APIs.
+
+### 🗄️ PostgreSQL
+A powerful, open-source relational database system used to store and manage application data. It works seamlessly with Django through the ORM (Object-Relational Mapping).
+
+### 🔍 GraphQL
+A query language for your API, and a runtime for executing those queries with your existing data. It provides a more efficient and flexible alternative to REST.
+
+### 🖥️ HTML/CSS/JavaScript
+Used for building the frontend interface of the application. HTML structures the content, CSS styles it, and JavaScript adds interactivity.
+
+### 🐳 Docker *(optional)*
+Used to containerize the application, making it easier to deploy and run in any environment.
+
+### 🌍 Git & GitHub
+Git is used for version control, while GitHub hosts the repository and facilitates collaboration.
